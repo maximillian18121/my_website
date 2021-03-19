@@ -1,0 +1,109 @@
+*{ 
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+  }
+
+.header{
+    display:flex;
+    flex-wrap: nowrap;
+     background-image:linear-gradient(rgb(255,255,255,0.75),rgb(255,255,255,0.75)),url("../../assets/img4.jpg");
+}
+.header-section{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.section-heading{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:8rem;
+    padding:1rem;
+    border: solid 4px azure;
+}
+@keyframes anim-image{
+    form{
+        transform: skewX(0deg);
+    }
+    to{
+        transform: skewX(360deg);
+    }
+}
+.section-image{
+    transform:scale(0.8);
+    padding:2rem;
+    background-color: rgb(247, 247, 154);
+    animation-name: anim-image;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    
+}
+@keyframes anim-pellet{
+    from{
+        transform: translateX(0%);
+        background-color:rgb(240, 98, 98);
+    }
+    to{
+        transform: translateX(5%);
+        background-color:rgb(137, 247, 122);
+    }
+}
+.intro-pellet{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(240, 98, 98);
+    animation-name: anim-pellet;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+   }
+
+.my-photo{
+    height:15%;
+    width:15%;
+    border-radius:10%;
+    margin-left:20%;
+    margin-bottom: 2%;
+    margin-top:2%;
+}
+.intro-info{
+    margin:auto;
+}
+.content-wrapper{
+    padding-top:8%;
+    justify-content: right;
+   background-image:linear-gradient(rgb(255,255,255,0.75),rgb(255,255,255,0.75)),url("../../assets/img2.jpg");
+}
+.content-head-is-container{
+    display:flex;
+    justify-content: center;
+}
+.Appfeatures{
+    padding:6%;
+}
+.content-head{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-weight: bold;
+}
+#my,#myFirst{
+    display:flex;
+    flex-direction:column;
+    padding:2%;
+}
+
+.content-subhead{
+    color:rgb(57, 147, 250);
+    font-size: 1.5rem;
+}
+#myFirst{
+    padding-right: 5%;
+}
